@@ -29,8 +29,8 @@ print("Joysticks found: ",pygame.joystick.get_count())
 
 
 #setting up P1 moving set up 
-TILE_SIZE = 32   #tile size
-move_speed = .5   #speed of P1
+TILE_SIZE = 24   #tile size
+move_speed = 2.5   #speed of P1
 P1X, P1Y = 1, 1   #Position of P1 (this is also the starting position)
 P1_pixelX, P1_pixelY = P1X * TILE_SIZE, P1Y * TILE_SIZE   #specific pixel position
 target_x, target_y = P1_pixelX, P1_pixelY   #target grid position the character is moving to
@@ -41,7 +41,7 @@ current_direction = "down"   #current direction character is facing
 #P1 frames and animation settings
 current_frame = 0   #which animation frame is currently showing
 frame_timer = 0   #timer to track how long the current frame has been showing
-frame_delay = 400   #time to wait before switching to the next frame
+frame_delay = 60   #time to wait before switching to the next frame
 
 
 
